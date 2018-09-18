@@ -1,0 +1,1 @@
+### PhoenixSystem.Core provides a netstandard ECS implementation for game development and more.
