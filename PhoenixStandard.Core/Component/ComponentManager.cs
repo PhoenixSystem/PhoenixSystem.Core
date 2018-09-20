@@ -6,6 +6,13 @@ namespace PhoenixStandard.Core.Component
 {
     public class ComponentManager : IComponentManager
     {
+        private readonly IComponentFactory<IComponent> _factory;
+
+        public ComponentManager(IComponentFactory<IComponent> factory)
+        {
+            _factory = factory;
+        }
+
         public bool AddComponentToEntity(long entityId, IComponent component)
         {
             throw new NotImplementedException();
