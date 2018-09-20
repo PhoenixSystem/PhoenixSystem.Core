@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoenixStandard.Core", "PhoenixStandard.Core\PhoenixStandard.Core.csproj", "{06CE709B-7C2B-429B-810A-A24140C945C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoenixStandard.Core", "PhoenixStandard.Core\PhoenixStandard.Core.csproj", "{06CE709B-7C2B-429B-810A-A24140C945C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoenixStandard.Core.Tests", "PhoenixStandard.Core.Tests\PhoenixStandard.Core.Tests.csproj", "{A709BE73-A02F-4413-9B89-E4F28CFAECB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoenixStandard.Core.Tests", "PhoenixStandard.Core.Tests\PhoenixStandard.Core.Tests.csproj", "{A709BE73-A02F-4413-9B89-E4F28CFAECB8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{42F138EF-B58C-484B-B66C-D07015850F15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{4C03E2D8-FDFA-4B17-996E-CE7F640D9567}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{06CE709B-7C2B-429B-810A-A24140C945C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -44,5 +45,15 @@ Global
 		{A709BE73-A02F-4413-9B89-E4F28CFAECB8}.Release|x64.Build.0 = Release|Any CPU
 		{A709BE73-A02F-4413-9B89-E4F28CFAECB8}.Release|x86.ActiveCfg = Release|Any CPU
 		{A709BE73-A02F-4413-9B89-E4F28CFAECB8}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{06CE709B-7C2B-429B-810A-A24140C945C5} = {42F138EF-B58C-484B-B66C-D07015850F15}
+		{A709BE73-A02F-4413-9B89-E4F28CFAECB8} = {4C03E2D8-FDFA-4B17-996E-CE7F640D9567}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1F6829D-7317-4121-A701-B62016F7D5A8}
 	EndGlobalSection
 EndGlobal

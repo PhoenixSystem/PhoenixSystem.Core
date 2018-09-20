@@ -1,7 +1,8 @@
 namespace PhoenixStandard.Core.Component
 {
-    interface IComponent
+    public interface IComponent
     {
         long AttachedEntityId { get; }
+        void Reset();
     }
 }
