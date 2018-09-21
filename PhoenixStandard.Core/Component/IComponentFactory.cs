@@ -2,6 +2,6 @@
 {
     public interface IComponentFactory<T> where T : IComponent
     {
-        IComponent Create();
+        T Create();
     }
 }
