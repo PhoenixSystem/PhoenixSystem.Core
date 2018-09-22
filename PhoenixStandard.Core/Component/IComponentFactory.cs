@@ -1,7 +1,8 @@
 ﻿namespace PhoenixStandard.Core.Component
 {
-    public interface IComponentFactory<T> where T : IComponent
+    public interface IComponentFactory
     {
-        T Create();
+        T Get<T>() where T : IComponent, new();
+        void Release(IComponent component);
     }
 }
